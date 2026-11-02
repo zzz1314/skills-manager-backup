@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "e229cf0f-1d86-4de5-9337-87d8b2ec3688",
+  "path": "design",
+  "path_key": "design",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "subpath": "cli\\assets\\skills\\design",
+    "branch": null
+  }
+}

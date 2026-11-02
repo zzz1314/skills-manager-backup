@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "2f051a6d-c311-4177-9bcb-d0fc3b56efc3",
+  "path": "web-shader-extractor",
+  "path_key": "web-shader-extractor",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\web-shader-extractor",
+    "branch": null
+  }
+}

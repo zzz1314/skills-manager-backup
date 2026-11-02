@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "44f0431b-f8dd-4535-9a66-7ffa5aa8a0b9",
+  "path": "neat-freak",
+  "path_key": "neat-freak",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

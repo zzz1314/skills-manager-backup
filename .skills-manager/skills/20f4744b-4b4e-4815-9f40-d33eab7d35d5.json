@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "20f4744b-4b4e-4815-9f40-d33eab7d35d5",
+  "path": "paper-spine",
+  "path_key": "paper-spine",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "725a34f4-bef4-4387-82da-33f352b634f7",
+  "path": "codex-image2-5",
+  "path_key": "codex-image2-5",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/daifei-0/codex-image2-5-skill/tree/main/codex-image2-5",
+    "subpath": "codex-image2-5",
+    "branch": "main"
+  }
+}

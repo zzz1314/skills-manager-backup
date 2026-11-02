@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b3fd9f74-329e-4144-832c-a911471f3bd4",
+  "path": "evidence-driven-writing",
+  "path_key": "evidence-driven-writing",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

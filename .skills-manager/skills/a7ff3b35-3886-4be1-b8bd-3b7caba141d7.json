@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a7ff3b35-3886-4be1-b8bd-3b7caba141d7",
+  "path": "anti-defensive-writing-en",
+  "path_key": "anti-defensive-writing-en",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill.git",
+    "subpath": "skills\\anti-defensive-writing-en",
+    "branch": null
+  }
+}

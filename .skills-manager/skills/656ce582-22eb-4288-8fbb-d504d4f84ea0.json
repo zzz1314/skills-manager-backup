@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "656ce582-22eb-4288-8fbb-d504d4f84ea0",
+  "path": "research-draw",
+  "path_key": "research-draw",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

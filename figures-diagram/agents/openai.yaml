@@ -1,0 +1,5 @@
+interface:
+  display_name: "Figures Diagram"
+  short_description: "Use when creating flowcharts, architecture diagrams, or conceptual diagrams - generates promp..."
+  default_prompt: "Use $figures-diagram for the user's research writing task."
+

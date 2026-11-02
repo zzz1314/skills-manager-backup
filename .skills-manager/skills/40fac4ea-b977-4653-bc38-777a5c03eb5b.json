@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "40fac4ea-b977-4653-bc38-777a5c03eb5b",
+  "path": "slide-maker",
+  "path_key": "slide-maker",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

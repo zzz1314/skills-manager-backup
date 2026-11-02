@@ -1,0 +1,4 @@
+interface:
+  display_name: "QBS · 找书读书做技能"
+  short_description: "从实际问题主动找书、取得并阅读相关正文，再提炼方法、制作 Skill 并用任务检验"
+  default_prompt: "使用 $qbs，针对我遇到的问题主动找一本合适的书，取得并完整阅读相关正文章节，再把有出处的方法做成 Skill，并用一个实际任务试跑。"

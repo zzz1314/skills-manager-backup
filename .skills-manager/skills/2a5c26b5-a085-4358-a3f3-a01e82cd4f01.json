@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2a5c26b5-a085-4358-a3f3-a01e82cd4f01",
+  "path": "shape-up",
+  "path_key": "shape-up",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/LearnPrompt/qbs.git",
+    "subpath": "skills\\shape-up",
+    "branch": null
+  }
+}

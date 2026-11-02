@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ba813c12-0670-44ca-b673-1e85d03772b8",
+  "path": "nature-ref-verifier",
+  "path_key": "nature-ref-verifier",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

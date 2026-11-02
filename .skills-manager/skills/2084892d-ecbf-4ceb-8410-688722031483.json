@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2084892d-ecbf-4ceb-8410-688722031483",
+  "path": "paper-writer",
+  "path_key": "paper-writer",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

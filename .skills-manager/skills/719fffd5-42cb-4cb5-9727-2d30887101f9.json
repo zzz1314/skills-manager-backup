@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "719fffd5-42cb-4cb5-9727-2d30887101f9",
+  "path": "writing-medical",
+  "path_key": "writing-medical",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

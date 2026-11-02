@@ -1,0 +1,7 @@
+interface:
+  display_name: "Markdown 转 Word"
+  short_description: "将定稿 Markdown 转换为 Word 并严格核对内容与排版"
+  default_prompt: "使用 $markdown-to-word 将我已确认的 Markdown 成果转换为 Word 文档，并检查文字、表格、编号、数字和公式。"
+
+policy:
+  allow_implicit_invocation: true

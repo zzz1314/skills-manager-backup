@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Law"
+  short_description: "Use when writing law papers - provides legal writing conventions, citation formats, and argum..."
+  default_prompt: "Use $writing-law for the user's research writing task."
+

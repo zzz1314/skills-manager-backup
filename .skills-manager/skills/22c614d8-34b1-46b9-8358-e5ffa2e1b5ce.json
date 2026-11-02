@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "22c614d8-34b1-46b9-8358-e5ffa2e1b5ce",
+  "path": "beamer-academic",
+  "path_key": "beamer-academic",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Environment Setup"
+  short_description: "Use when Python environment setup is needed for data visualization or conda installation is r..."
+  default_prompt: "Use $environment-setup for the user's research writing task."
+

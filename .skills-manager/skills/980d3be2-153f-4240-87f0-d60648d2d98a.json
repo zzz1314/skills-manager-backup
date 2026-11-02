@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "980d3be2-153f-4240-87f0-d60648d2d98a",
+  "path": "paper-author-pass",
+  "path_key": "paper-author-pass",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/THUROI0787/absent-author.git",
+    "subpath": "skills\\paper-author-pass",
+    "branch": null
+  }
+}

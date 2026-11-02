@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a1c3ccd1-cbe5-4722-b49c-ea8244cfb5dc",
+  "path": "academic-humanizer",
+  "path_key": "academic-humanizer",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

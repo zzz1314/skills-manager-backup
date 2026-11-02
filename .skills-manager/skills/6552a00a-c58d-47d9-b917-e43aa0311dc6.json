@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6552a00a-c58d-47d9-b917-e43aa0311dc6",
+  "path": "resume-jd-optimizer-cn",
+  "path_key": "resume-jd-optimizer-cn",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

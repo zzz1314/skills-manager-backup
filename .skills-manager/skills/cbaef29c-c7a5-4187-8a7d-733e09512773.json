@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "cbaef29c-c7a5-4187-8a7d-733e09512773",
+  "path": "slides",
+  "path_key": "slides",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "subpath": "cli\\assets\\skills\\slides",
+    "branch": null
+  }
+}

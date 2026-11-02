@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "ee40cad1-b552-4fd6-b0b3-db306464b1d2",
+  "path": "gsap-utils",
+  "path_key": "gsap-utils",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\gsap\\gsap-utils",
+    "branch": null
+  }
+}

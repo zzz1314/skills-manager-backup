@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Chapters"
+  short_description: "Use when writing paper chapters - requires completed brainstorming, writes one chapter at a t..."
+  default_prompt: "Use $writing-chapters for the user's research writing task."
+

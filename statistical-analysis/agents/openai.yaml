@@ -1,0 +1,5 @@
+interface:
+  display_name: "Statistical Analysis"
+  short_description: "Use when planning or reporting statistical analysis - provides test selection, execution code..."
+  default_prompt: "Use $statistical-analysis for the user's research writing task."
+

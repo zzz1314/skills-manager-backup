@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "53efec65-feed-4120-88a7-6b7341361899",
+  "path": "reference-checker",
+  "path_key": "reference-checker",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

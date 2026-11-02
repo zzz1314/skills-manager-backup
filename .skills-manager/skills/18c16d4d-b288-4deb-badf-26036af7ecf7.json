@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "18c16d4d-b288-4deb-badf-26036af7ecf7",
+  "path": "web-clone",
+  "path_key": "web-clone",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\web-clone",
+    "branch": null
+  }
+}

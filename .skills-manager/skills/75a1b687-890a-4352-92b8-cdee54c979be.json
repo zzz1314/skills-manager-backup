@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "75a1b687-890a-4352-92b8-cdee54c979be",
+  "path": "uizze-ui",
+  "path_key": "uizze-ui",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/uizze/uizze.git",
+    "subpath": "skills\\uizze-ui",
+    "branch": null
+  }
+}

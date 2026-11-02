@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "de44489f-bbf1-42a5-aa1c-70792faf36b3",
+  "path": "ponytail-gain",
+  "path_key": "ponytail-gain",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/DietrichGebert/ponytail.git",
+    "subpath": "skills\\ponytail-gain",
+    "branch": null
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Figures Python"
+  short_description: "Use when creating data visualizations for papers - generates publication-quality plots with t..."
+  default_prompt: "Use $figures-python for the user's research writing task."
+

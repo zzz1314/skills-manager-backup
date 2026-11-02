@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "84c11b71-7699-436b-8732-02b3b1d57efe",
+  "path": "lieflat-less-ai-tone",
+  "path_key": "lieflat-less-ai-tone",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone.git",
+    "subpath": null,
+    "branch": null
+  }
+}

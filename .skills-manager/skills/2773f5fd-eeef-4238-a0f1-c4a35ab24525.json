@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2773f5fd-eeef-4238-a0f1-c4a35ab24525",
+  "path": "ppt-director",
+  "path_key": "ppt-director",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

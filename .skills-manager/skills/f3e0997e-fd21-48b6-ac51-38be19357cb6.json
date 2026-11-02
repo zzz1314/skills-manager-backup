@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "f3e0997e-fd21-48b6-ac51-38be19357cb6",
+  "path": "recreate-scientific-figure-in-drawio",
+  "path_key": "recreate-scientific-figure-in-drawio",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

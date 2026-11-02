@@ -1,0 +1,5 @@
+interface:
+  display_name: "Latex Output"
+  short_description: "Use when user requests LaTeX format output or has provided school/journal LaTeX templates"
+  default_prompt: "Use $latex-output for the user's research writing task."
+

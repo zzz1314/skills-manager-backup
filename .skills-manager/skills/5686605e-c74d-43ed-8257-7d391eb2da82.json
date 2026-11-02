@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "5686605e-c74d-43ed-8257-7d391eb2da82",
+  "path": "oil-ui",
+  "path_key": "oil-ui",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/oil-oil/oil-ui",
+    "subpath": null,
+    "branch": null
+  }
+}

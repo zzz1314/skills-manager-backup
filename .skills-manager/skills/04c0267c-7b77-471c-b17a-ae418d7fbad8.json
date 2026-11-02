@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "04c0267c-7b77-471c-b17a-ae418d7fbad8",
+  "path": "audit-scientific-figure",
+  "path_key": "audit-scientific-figure",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

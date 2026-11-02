@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "fdd29663-d4c9-4509-8905-282f1fb563f5",
+  "path": "tob-sales-assistant",
+  "path_key": "tob-sales-assistant",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

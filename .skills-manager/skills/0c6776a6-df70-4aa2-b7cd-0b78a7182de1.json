@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "0c6776a6-df70-4aa2-b7cd-0b78a7182de1",
+  "path": "nature-response",
+  "path_key": "nature-response",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

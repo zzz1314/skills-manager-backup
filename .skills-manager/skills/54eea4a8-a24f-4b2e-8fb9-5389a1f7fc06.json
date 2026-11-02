@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "54eea4a8-a24f-4b2e-8fb9-5389a1f7fc06",
+  "path": "resume-experience-deep-dive",
+  "path_key": "resume-experience-deep-dive",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

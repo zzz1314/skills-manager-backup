@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e7f0ea5b-59c8-47ce-a867-4c0d2c6772e1",
+  "path": "nature-experiment-log",
+  "path_key": "nature-experiment-log",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

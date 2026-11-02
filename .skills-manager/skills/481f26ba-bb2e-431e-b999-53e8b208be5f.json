@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "481f26ba-bb2e-431e-b999-53e8b208be5f",
+  "path": "scientific-paper-figure",
+  "path_key": "scientific-paper-figure",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

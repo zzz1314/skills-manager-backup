@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Medical"
+  short_description: "Use when writing medical, biological, or clinical research papers - provides IMRaD structure..."
+  default_prompt: "Use $writing-medical for the user's research writing task."
+

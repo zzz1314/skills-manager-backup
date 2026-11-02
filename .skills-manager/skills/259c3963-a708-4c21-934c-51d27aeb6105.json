@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "259c3963-a708-4c21-934c-51d27aeb6105",
+  "path": "excalidraw-diagram",
+  "path_key": "excalidraw-diagram",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/coleam00/excalidraw-diagram-skill.git",
+    "subpath": null,
+    "branch": null
+  }
+}

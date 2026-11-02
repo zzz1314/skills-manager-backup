@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.tmp
+.skills-manager.lock
+__pycache__/
+*.pyc
+
+# skills-manager: oversized skills excluded from backup (auto-managed)
+/slidemuse/
+/.skills-manager/skills/30bc13d1-23c5-4b0a-b821-02f26e9ea24e.json
+/vivid-figures-skill/
+/.skills-manager/skills/7fb4a82f-fe6e-423f-857a-80271390ec3e.json
+# skills-manager: end oversized skills

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d4718917-8778-49ce-9aff-38ca7532e902",
+  "path": "recreate-scientific-figure",
+  "path_key": "recreate-scientific-figure",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

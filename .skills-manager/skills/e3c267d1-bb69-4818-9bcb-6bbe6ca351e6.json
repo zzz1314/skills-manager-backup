@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "e3c267d1-bb69-4818-9bcb-6bbe6ca351e6",
+  "path": "web-to-design-md",
+  "path_key": "web-to-design-md",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\web-to-design-md",
+    "branch": null
+  }
+}

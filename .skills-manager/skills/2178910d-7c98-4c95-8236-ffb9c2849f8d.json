@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2178910d-7c98-4c95-8236-ffb9c2849f8d",
+  "path": "drawio-diagram-builder",
+  "path_key": "drawio-diagram-builder",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

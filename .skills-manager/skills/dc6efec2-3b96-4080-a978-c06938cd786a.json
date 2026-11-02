@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "dc6efec2-3b96-4080-a978-c06938cd786a",
+  "path": "brandkit-2",
+  "path_key": "brandkit-2",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/imagegen-skills.git",
+    "subpath": "skills\\brandkit",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b80b3d52-3e3e-4389-97c1-5df1cd093122",
+  "path": "nihaixia",
+  "path_key": "nihaixia",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

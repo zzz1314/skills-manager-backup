@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "6969352d-9136-469e-b3ca-d24c13690c06",
+  "path": "create-design-md",
+  "path_key": "create-design-md",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ibelick/ui-skills",
+    "subpath": "skills\\create-design-md",
+    "branch": null
+  }
+}

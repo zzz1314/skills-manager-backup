@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "96f5e125-af7c-4002-b99f-41bce6c11f27",
+  "path": "career-direction",
+  "path_key": "career-direction",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

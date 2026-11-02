@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "9846e0ea-b6f3-4142-b5d0-0e560a1ad401",
+  "path": "paper-orchestration",
+  "path_key": "paper-orchestration",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

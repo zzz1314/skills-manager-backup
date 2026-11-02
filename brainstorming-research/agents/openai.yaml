@@ -1,0 +1,5 @@
+interface:
+  display_name: "Brainstorming Research"
+  short_description: "Use before writing any paper - clarifies paper type, discipline, topic, methodology, and chap..."
+  default_prompt: "Use $brainstorming-research for the user's research writing task."
+

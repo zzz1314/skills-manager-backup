@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2df93d23-151a-43d0-89b6-98b5072d8fe9",
+  "path": "scientific-infographic",
+  "path_key": "scientific-infographic",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

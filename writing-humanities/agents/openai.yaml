@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Humanities"
+  short_description: "Use when writing humanities or social science papers - provides discipline-specific writing g..."
+  default_prompt: "Use $writing-humanities for the user's research writing task."
+

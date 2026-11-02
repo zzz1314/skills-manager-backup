@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "efd2f713-a711-407f-9c55-3d57bb2345c8",
+  "path": "gsap-timeline",
+  "path_key": "gsap-timeline",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\gsap\\gsap-timeline",
+    "branch": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "d87f31ab-4597-4e04-8d5a-d885a96f0ede",
+  "path": "imagegen-frontend-web-2",
+  "path_key": "imagegen-frontend-web-2",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/imagegen-skills.git",
+    "subpath": "skills\\imagegen-frontend-web",
+    "branch": null
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "职业方向诊断"
+  short_description: "拆解职业困惑，判断想做、适合与当前能否进入的职业方向"
+  default_prompt: "使用 $career-direction 帮我判断真正想做、适合长期承担以及当前能进入的职业方向。"

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "eb3cecec-d69b-4865-bf7c-7c7499cfb1d8",
+  "path": "image-to-ui",
+  "path_key": "image-to-ui",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/uizze/uizze.git",
+    "subpath": "skills\\image-to-ui",
+    "branch": null
+  }
+}

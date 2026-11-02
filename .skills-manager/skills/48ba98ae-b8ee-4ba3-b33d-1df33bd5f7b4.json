@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "48ba98ae-b8ee-4ba3-b33d-1df33bd5f7b4",
+  "path": "make-time",
+  "path_key": "make-time",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/LearnPrompt/qbs.git",
+    "subpath": "skills\\make-time",
+    "branch": null
+  }
+}

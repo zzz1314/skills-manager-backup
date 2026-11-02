@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "0d331f48-d674-4fdb-a870-c453e1c00160",
+  "path": "scientific-cover-visual",
+  "path_key": "scientific-cover-visual",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

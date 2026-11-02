@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "29e80d8e-9ed8-40ec-8bbe-18a435755f90",
+  "path": "nature-academic-search",
+  "path_key": "nature-academic-search",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

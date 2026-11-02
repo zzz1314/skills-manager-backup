@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c511f325-54ba-441b-a95e-ccc536fa5385",
+  "path": "answer-me-with-html",
+  "path_key": "answer-me-with-html",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/QingYunA/answer-me-with-html.git",
+    "subpath": "skills\\answer-me-with-html",
+    "branch": null
+  }
+}
