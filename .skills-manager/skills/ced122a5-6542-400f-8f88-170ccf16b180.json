@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ced122a5-6542-400f-8f88-170ccf16b180",
+  "path": "nature-paper-trans",
+  "path_key": "nature-paper-trans",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Yuan1z0825/nature-skills.git",
+    "subpath": "skills\\nature-paper-trans",
+    "branch": null
+  }
+}

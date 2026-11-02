@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "77079250-3cc9-4ff0-b358-56bb2c3e3a00",
+  "path": "nature-paper-xray",
+  "path_key": "nature-paper-xray",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Yuan1z0825/nature-skills.git",
+    "subpath": "skills\\nature-paper-xray",
+    "branch": null
+  }
+}

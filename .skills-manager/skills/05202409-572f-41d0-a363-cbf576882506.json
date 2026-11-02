@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "05202409-572f-41d0-a363-cbf576882506",
+  "path": "nature-reviewer-2",
+  "path_key": "nature-reviewer-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Yuan1z0825/nature-skills.git",
+    "subpath": "skills\\nature-reviewer",
+    "branch": null
+  }
+}
