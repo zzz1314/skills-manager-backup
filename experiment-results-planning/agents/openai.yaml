@@ -1,0 +1,5 @@
+interface:
+  display_name: "Experiment Results Planning"
+  short_description: "Use when designing experiments, result tables, mock planning data, evaluation protocols, or r..."
+  default_prompt: "Use $experiment-results-planning for the user's research writing task."
+

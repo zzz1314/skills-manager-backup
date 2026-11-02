@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Core"
+  short_description: "Use when writing or revising academic papers, especially Chinese journal manuscripts, that ne..."
+  default_prompt: "Use $writing-core for the user's research writing task."
+

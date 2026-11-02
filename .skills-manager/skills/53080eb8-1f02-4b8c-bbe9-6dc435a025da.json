@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "53080eb8-1f02-4b8c-bbe9-6dc435a025da",
+  "path": "improve-ui",
+  "path_key": "improve-ui",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ibelick/ui-skills",
+    "subpath": "skills\\improve-ui",
+    "branch": null
+  }
+}

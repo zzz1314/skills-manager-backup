@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "0df9227a-d2b3-46df-ad0b-dede2b33a29b",
+  "path": "anti-ui-slop",
+  "path_key": "anti-ui-slop",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/uizze/uizze.git",
+    "subpath": "skills\\anti-ui-slop",
+    "branch": null
+  }
+}

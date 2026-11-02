@@ -1,0 +1,6 @@
+interface:
+  display_name: "校招经历深挖与面试表达"
+  short_description: "基于真实证据完成简历、自我介绍、面试准备与复盘"
+  default_prompt: "使用 $resume-experience-deep-dive 读取目标岗位和相关材料，提炼可核验的经历，并完成简历、自我介绍、面试准备或复盘。"
+policy:
+  allow_implicit_invocation: true

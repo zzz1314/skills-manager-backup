@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e5799c5a-33c6-40d0-a75a-974b1f3106c9",
+  "path": "latex-output",
+  "path_key": "latex-output",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

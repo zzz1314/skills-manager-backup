@@ -1,0 +1,5 @@
+interface:
+  display_name: "Prompts Collection"
+  short_description: "Use for translation, polishing, or de-AI-ification of academic text - provides ready-to-use p..."
+  default_prompt: "Use $prompts-collection for the user's research writing task."
+

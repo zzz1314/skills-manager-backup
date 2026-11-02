@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "73125cea-d2e9-47c9-a178-bc21a7fb9249",
+  "path": "interview-radar",
+  "path_key": "interview-radar",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b00a2ef4-057e-4ad6-b0f6-27bd34b67582",
+  "path": "experiment-results-planning",
+  "path_key": "experiment-results-planning",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

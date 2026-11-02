@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "97b0d0d6-c58a-4296-b2d2-3a5f50979030",
+  "path": "scientific-toolkit-skill",
+  "path_key": "scientific-toolkit-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5535c736-5934-410c-881a-06696a56c20a",
+  "path": "resume-builder",
+  "path_key": "resume-builder",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/StoneLL1/resume-builder.git",
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Using Research Writing"
+  short_description: "Use when starting any research writing task - establishes workflow and routes to appropriate..."
+  default_prompt: "Use $using-research-writing for the user's research writing task."
+

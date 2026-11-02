@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "aa389c32-8f5d-4760-9a05-d60df3b0ed7f",
+  "path": "nature-reviewer",
+  "path_key": "nature-reviewer",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6ca87923-e40a-480a-9043-d6e8215764ad",
+  "path": "writing-chapters",
+  "path_key": "writing-chapters",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

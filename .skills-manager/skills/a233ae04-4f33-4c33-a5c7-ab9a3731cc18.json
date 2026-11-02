@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a233ae04-4f33-4c33-a5c7-ab9a3731cc18",
+  "path": "gpt-image-2-style-library",
+  "path_key": "gpt-image-2-style-library",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/freestylefly/awesome-gpt-image-2.git",
+    "subpath": "agents\\skills\\gpt-image-2-style-library",
+    "branch": null
+  }
+}

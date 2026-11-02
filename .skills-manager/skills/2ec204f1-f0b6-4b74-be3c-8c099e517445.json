@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "2ec204f1-f0b6-4b74-be3c-8c099e517445",
+  "path": "xunji-body-data",
+  "path_key": "xunji-body-data",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

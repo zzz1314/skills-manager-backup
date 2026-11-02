@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d19725c1-22f1-402b-9a58-d691e1d014e0",
+  "path": "vibe-research-workflow",
+  "path_key": "vibe-research-workflow",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "3ab6f325-f923-4f9d-899d-ebe75f083755",
+  "path": "unlazy",
+  "path_key": "unlazy",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/unlazy.git",
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "30c485a6-a8a1-4d97-848c-fc6f2d13e7d6",
+  "path": "xunji-agent-templates",
+  "path_key": "xunji-agent-templates",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

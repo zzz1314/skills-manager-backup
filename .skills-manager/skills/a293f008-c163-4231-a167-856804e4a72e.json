@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "a293f008-c163-4231-a167-856804e4a72e",
+  "path": "xunji-training-data",
+  "path_key": "xunji-training-data",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

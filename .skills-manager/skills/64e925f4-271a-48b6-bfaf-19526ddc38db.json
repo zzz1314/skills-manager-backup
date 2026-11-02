@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "64e925f4-271a-48b6-bfaf-19526ddc38db",
+  "path": "xunji-food-data",
+  "path_key": "xunji-food-data",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

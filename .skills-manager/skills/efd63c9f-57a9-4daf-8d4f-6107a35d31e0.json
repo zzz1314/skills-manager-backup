@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "efd63c9f-57a9-4daf-8d4f-6107a35d31e0",
+  "path": "baibaiAIGC",
+  "path_key": "baibaiaigc",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

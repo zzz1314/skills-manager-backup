@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "267bb3b3-2a08-46a7-9857-48a7e8c3c4c3",
+  "path": "oral-paper-skill",
+  "path_key": "oral-paper-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Adkid-Zephyr/oral-paper-skill.git",
+    "subpath": "skills\\oral-paper-skill",
+    "branch": null
+  }
+}

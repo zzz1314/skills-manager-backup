@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2a7f6166-62cf-4446-8e1d-01dabb68a893",
+  "path": "office-academic-skill",
+  "path_key": "office-academic-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

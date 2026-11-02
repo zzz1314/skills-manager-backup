@@ -1,0 +1,4 @@
+interface:
+  display_name: "ToB销售教练"
+  short_description: "通用ToB客户背调、阶段判断、复盘、谈判与成交推进教练。"
+  default_prompt: "Use $tob-sales-coach to diagnose this B2B deal, research the account if useful, update the deal card, and suggest the next sales move."

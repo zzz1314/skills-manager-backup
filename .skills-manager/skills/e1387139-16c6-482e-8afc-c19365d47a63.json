@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e1387139-16c6-482e-8afc-c19365d47a63",
+  "path": "using-research-writing",
+  "path_key": "using-research-writing",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

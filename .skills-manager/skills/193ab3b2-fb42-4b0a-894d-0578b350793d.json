@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "193ab3b2-fb42-4b0a-894d-0578b350793d",
+  "path": "the-debugging-book",
+  "path_key": "the-debugging-book",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/LearnPrompt/qbs.git",
+    "subpath": "skills\\the-debugging-book",
+    "branch": null
+  }
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Evidence Driven Writing"
+  short_description: "Use when writing or revising Introduction, Related Work, background, literature synthesis, or..."
+  default_prompt: "Use $evidence-driven-writing for the user's research writing task."
+

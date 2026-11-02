@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "4e5b1ccc-f007-4fa6-9f2c-4dac28013560",
+  "path": "get-job",
+  "path_key": "get-job",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

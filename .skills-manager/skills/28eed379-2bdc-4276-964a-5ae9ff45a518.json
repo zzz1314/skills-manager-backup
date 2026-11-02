@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "28eed379-2bdc-4276-964a-5ae9ff45a518",
+  "path": "ui-skills-root",
+  "path_key": "ui-skills-root",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ibelick/ui-skills",
+    "subpath": "skills\\ui-skills-root",
+    "branch": null
+  }
+}

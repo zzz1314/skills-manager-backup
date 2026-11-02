@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "8ac56b92-9f93-4efe-b816-ae93841cc384",
+  "path": "figures-python",
+  "path_key": "figures-python",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

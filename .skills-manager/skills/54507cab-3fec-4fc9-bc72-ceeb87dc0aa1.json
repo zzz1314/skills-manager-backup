@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "54507cab-3fec-4fc9-bc72-ceeb87dc0aa1",
+  "path": "writing-law",
+  "path_key": "writing-law",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

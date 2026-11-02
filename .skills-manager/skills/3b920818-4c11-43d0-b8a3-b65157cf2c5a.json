@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3b920818-4c11-43d0-b8a3-b65157cf2c5a",
+  "path": "journal-adapt",
+  "path_key": "journal-adapt",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "7ad2bb34-5465-423a-8141-3797ee619917",
+  "path": "nature-writing",
+  "path_key": "nature-writing",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

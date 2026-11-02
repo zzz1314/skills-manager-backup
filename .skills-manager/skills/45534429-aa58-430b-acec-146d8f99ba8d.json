@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "45534429-aa58-430b-acec-146d8f99ba8d",
+  "path": "writing-humanities",
+  "path_key": "writing-humanities",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

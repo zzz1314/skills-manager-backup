@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "a944c146-2692-45cd-b532-c40941e9631c",
+  "path": "motion-anything",
+  "path_key": "motion-anything",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/nexu-io/motion-anything.git",
+    "subpath": "skills\\motion-anything",
+    "branch": null
+  }
+}

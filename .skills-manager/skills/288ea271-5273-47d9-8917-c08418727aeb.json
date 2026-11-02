@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "288ea271-5273-47d9-8917-c08418727aeb",
+  "path": "shuorenhua",
+  "path_key": "shuorenhua",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

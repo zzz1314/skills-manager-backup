@@ -1,0 +1,5 @@
+interface:
+  display_name: "Peer Review"
+  short_description: "Use before submission or when reviewing papers - provides evaluation checklists, bias detecti..."
+  default_prompt: "Use $peer-review for the user's research writing task."
+

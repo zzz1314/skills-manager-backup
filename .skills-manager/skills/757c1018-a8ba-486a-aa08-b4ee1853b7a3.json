@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "757c1018-a8ba-486a-aa08-b4ee1853b7a3",
+  "path": "literature-review",
+  "path_key": "literature-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

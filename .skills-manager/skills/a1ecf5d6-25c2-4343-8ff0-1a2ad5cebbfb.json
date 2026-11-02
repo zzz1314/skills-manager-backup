@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "a1ecf5d6-25c2-4343-8ff0-1a2ad5cebbfb",
+  "path": "app-ui-ux-best-practices",
+  "path_key": "app-ui-ux-best-practices",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/touchine-ojo/OJO-Design-Skills.git",
+    "subpath": "skills\\app-ui-ux-best-practices",
+    "branch": null
+  }
+}

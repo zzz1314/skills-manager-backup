@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "57c0ecd6-4041-4c42-b651-5362cf2c1040",
+  "path": "image-to-code-2",
+  "path_key": "image-to-code-2",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/imagegen-skills.git",
+    "subpath": "skills\\image-to-code",
+    "branch": null
+  }
+}

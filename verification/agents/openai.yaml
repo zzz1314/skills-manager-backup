@@ -1,0 +1,5 @@
+interface:
+  display_name: "Verification"
+  short_description: "Use when about to claim work is complete, a chapter is finished, or references are verified -..."
+  default_prompt: "Use $verification for the user's research writing task."
+

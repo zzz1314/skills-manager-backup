@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "9cfa8693-e472-4757-b060-38ea39f09f1b",
+  "path": "drawio-reconstruction",
+  "path_key": "drawio-reconstruction",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

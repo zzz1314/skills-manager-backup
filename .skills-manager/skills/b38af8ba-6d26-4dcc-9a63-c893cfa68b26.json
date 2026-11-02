@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "b38af8ba-6d26-4dcc-9a63-c893cfa68b26",
+  "path": "ui-design",
+  "path_key": "ui-design",
+  "enabled": true,
+  "tags": [
+    "html",
+    "ui"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/uizze/uizze.git",
+    "subpath": "skills\\ui-design",
+    "branch": null
+  }
+}
