@@ -2,7 +2,7 @@
   "schema_version": 1,
   "scenario_id": "035562a9-caf8-4b99-870f-b951b918be55",
   "skill_id": "aa6bdbec-ffa6-4b7f-b1b3-a80c86ec33c2",
-  "sort_order": 53,
+  "sort_order": 57,
   "tools": {
     "codex": true,
     "workbuddy": true
