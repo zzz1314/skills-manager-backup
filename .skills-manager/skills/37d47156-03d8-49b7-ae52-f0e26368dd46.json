@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "37d47156-03d8-49b7-ae52-f0e26368dd46",
+  "path": "editaplot",
+  "path_key": "editaplot",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/hang-jin/editaplot.git",
+    "subpath": "skill\\editaplot",
+    "branch": null
+  }
+}

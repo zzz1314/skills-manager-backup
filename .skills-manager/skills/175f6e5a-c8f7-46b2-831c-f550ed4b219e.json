@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "175f6e5a-c8f7-46b2-831c-f550ed4b219e",
+  "path": "nature-statistics-2",
+  "path_key": "nature-statistics-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Yuan1z0825/nature-skills.git",
+    "subpath": "skills\\nature-statistics",
+    "branch": null
+  }
+}

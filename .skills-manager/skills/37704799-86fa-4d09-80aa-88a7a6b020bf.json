@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "37704799-86fa-4d09-80aa-88a7a6b020bf",
+  "path": "nature-paper2word",
+  "path_key": "nature-paper2word",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Yuan1z0825/nature-skills.git",
+    "subpath": "skills\\nature-paper2word",
+    "branch": null
+  }
+}
