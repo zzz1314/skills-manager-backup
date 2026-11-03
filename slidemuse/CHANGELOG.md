@@ -1,0 +1,556 @@
+# Changelog
+
+本项目的所有显著变更都记录在此文件中。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本遵循语义化版本。
+
+## [Unreleased]
+
+## [2.24.3] - 2026-11-03
+
+### Removed
+
+- 下线可编辑样板：删除 `showcase/editable-irena`（含 `sample.zip`、可编辑与图片版 PPTX、四份练习成品、`demo.mp4` 修改演示视频、previews、source、reproduce.py 与 scene/page-spec 输入），以及 `docs/editable-sample.md` 与英文版。
+- 移除与之配套的能力：`slidemuse.py sample` 命令、`install.py --with-sample` 参数与 `sample_included` 安装标记、CI 的样板重建步骤、发布流程中的 `sample.zip` 打包与 Release 资产。
+- 中英文 README、`SKILL.md`、`docs/cli.md`、`docs/guide.md` 中指向样板的说明与链接一并移除。
+
+### Changed
+
+- Release 资产现只含 `slidemuse-v<version>.zip` 与 `SHA256SUMS.txt`。
+
+## [2.24.2] - 2026-11-01
+
+### Removed
+
+- README 移除“可编辑样板”板块（中英文），作品展示区直接从竞赛作品开始。IRENA 样板文件、docs/editable-sample 文档、install.py 的 --with-sample 参数与发布包中的 sample.zip 均保持不变。
+
+### Fixed
+
+- 修正世界职业院校技能大赛的规则说明：删除无官方依据的固定 5/45/10 分钟分配，按 2026 年实施方案说明总时长与现场展示形式。
+- 将研创赛的匿名要求和答辩时长限定到具体子赛、届次与阶段，不再将 6+4 分钟作为整个系列的通用规则。
+- 修正竞赛扩充清单的合计数量：三类共 33 项。
+
+## [2.24.1] - 2026-11-01
+
+### Added
+
+- 补充世界职业院校技能大赛：2026 年实施方案要求同步进行技能操作和现场讲解，讲解主要介绍项目设计、工作流程、核心技能、主要成果等。争夺赛每个项目不超过 1 小时，由队伍根据项目实际需要确定；排位赛与冠军总决赛每个项目为 10 分钟，须有核心技能的实践操作。此前该赛事被误判为纯实操而排除。
+- 补充挑战杯—彩虹人生（职业学校创新创效创业大赛）到第二优先清单，并标注届次待核实。
+- 新增 4 个职业院校相关触发词：世校赛PPT、职业院校技能大赛PPT、世界职业院校技能大赛PPT、彩虹人生PPT。
+- 新增"数模答辩（校内/省赛）"场景与叙事骨架：问题重述 → 假设与符号 → 模型建立 → 求解算法 → 结果与检验 → 灵敏度分析 → 模型优缺点。国赛不设全国答辩，该场景限校内选拔、优秀论文交流与省赛答辩；新增 3 个限定触发词（数模校内答辩PPT、数模省赛答辩PPT、数学建模预答辩PPT）。
+
+### Changed
+
+- 竞赛文档不再维护"不纳入"赛事清单，只保留实际纳入与第二优先的条目。
+- 全国职业院校技能大赛不再单列：该赛事已于 2024 年升级为世界职业院校技能大赛。
+
+## [2.24.0] - 2026-11-01
+
+### Added
+
+- 竞赛场景扩充：补充学科竞赛答辩、案例陈述答辩与教学说课三类赛事，均以"决赛或校内选拔确实要 PPT 答辩"为准入标准——计算机设计大赛、软件杯、服创大赛、信息安全竞赛作品赛、集创赛、嵌入式芯片赛、机创赛、化工设计竞赛、结构设计竞赛、节能减排、3D 大赛、大广赛（策划案类）、睿抗、研创赛、生命科学竞赛、MPA、MPAcc、IMA、CFA Research Challenge、iGEM、Hult Prize、Imagine Cup、教学创新大赛、田家炳杯等。
+- 新增一批赛事触发词（计算机设计大赛PPT、软件杯PPT、集创赛PPT、嵌入式大赛PPT、机创赛PPT、化工设计大赛PPT、结构设计竞赛PPT、3D大赛PPT、大广赛PPT、睿抗PPT、研创赛PPT、案例大赛PPT、说课PPT 等）。
+- 新增 [竞赛场景扩充建议](docs/competition-expansion-proposal.md)：现有覆盖盘点、分赛道赛事清单与答辩主线、第二优先赛事，以及官网链接实测记录。
+- [内容大纲](references/content-outline.md)增加"可选叙事骨架"：学科竞赛答辩、案例陈述答辩、教学创新说课、国际与社会路演四种起稿顺序。
+
+### Changed
+
+- 竞赛表按赛道拆为三张（创新创业与团队路演 / 学科竞赛与案例答辩 / 教学与说课），中英文 README 同步；单表随赛事增多已不可读。
+- 教学与说课单列为一类场景：教创赛官方要求提交"教学设计创新汇报 PPT"，属于纯 PPT 交付物，此前未覆盖。
+
+### Fixed
+
+- 修正竞赛场景的准入判断：CUMCM、MCM/ICM、华为杯研究生数模、MathorCup、APMCM 为"提交论文即完赛"，电子设计竞赛主赛道与智能汽车竞赛为"实物测评 / 竞速 + 技术报告"，均无全国统一答辩，不再作为答辩 PPT 场景宣传；蓝桥杯、成图大赛为机考，同样排除。
+- 机械创新设计大赛缺少可验证的统一官方门户，赛事表中不再放链接；服创大赛与化工设计竞赛官网当天不可用，同样只保留赛事名。
+- 信息安全竞赛官网改为 `http://`，其 https 入口不可用。
+
+## [2.23.0] - 2026-10-22
+
+### Changed
+
+- Shorten the skill entrypoint and move legacy state codes to recovery guidance. Read supplied materials before recommending length; use stated defaults for unspecified style, page count and image delivery, and ask only about material ambiguities. Preserve content/style choices and honor existing delegation.
+- Focus ordinary production and local edits on content, affected pages and actual rendering; formal scorecards, cost logs and multi-material benchmarks remain available when needed. Existing seals and benchmark records are unchanged.
+- Omit showcase assets from the core release and IRENA from default installations. Publish the original self-contained `sample.zip` separately with its checksum; full checkouts can opt in with `install.py --with-sample`. Explain optional-sample retrieval instead of asking users to reinstall a healthy core skill.
+- Document validation by change scope, retaining full release and compatibility checks where needed.
+- Use a deterministic environment in simulated pipeline tests instead of repeatedly scanning machine fonts. Dedicated fingerprint invalidation tests and real-render controls remain in place.
+
+## [2.22.0] - 2026-10-19
+
+### Added
+
+- Add `produce` for resumable Page Spec image production: immutable original/output/intent/review snapshots, atomic state commits with recoverable output projection, single-page invalidation and protected-evidence composition.
+- Bind thumbnail geometry to source crops and actual overview pixels; strict selection checks reject padded, incorrectly proportioned internal slides. Legacy outer-canvas checks explicitly remain unverified.
+- Allow explicit semantic-to-display coverage so charts can carry claims without repeating every semantic field as literal bullets. Mandatory visible values remain checked; semantic coverage needs actual review.
+- Record original/final resolution and explicit upscaling, separate measured phase durations and user waits, and preserve unknown historical timing.
+- Reject numeric substring false positives such as treating 132% as the required 32%; keep notes-only changes from invalidating approved images.
+- Align both README languages and user guides with role-aware density exceptions instead of a universal bullet quota.
+
+## [2.21.0] - 2026-10-18
+
+### Changed
+
+- Replace the universal bullet quota with role-aware density defaults and explicit exceptions; reconcile prompts and remove the unsupported total-flow claim from the example.
+- Add shared content checks, Page Spec adapters for generation/rebuilding, and hash-bound generated-image observations. These checks do not authenticate sources or prove visual quality.
+- Guard generation assembly against unfinished/missing/extra pages, changed images/prompts, stale reviews and aspect-ratio changes; preserve exact embedded image bytes and notes, and retain prior PPTX on failure.
+- Keep old frozen Page Specs readable. Legacy generation jobs without a content contract report that content was not checked.
+
+
+## [2.20.0] - 2026-10-17
+
+### Added
+
+- Adopt a typed density floor for outlines: every page declares one of 12 layout roles, and every content page carries 3-5 distinct supporting points with per-role required content and a page-budget rule. Revises the previous "no bullet count is judged" statement, which was the main density gap.
+- Add the matching Page Spec contract: `slides[].role` accepts the same 12-value enum and `slides[].key_points` accepts 3-5 unique non-empty strings. Older drafts and frozen samples without the fields stay readable and are not retroactively certified.
+- Add a reusable style library: built-in styles ship under `vendor/codex-ppt/skills/codex-ppt/references/`, user styles live outside the skill install under `${CODEX_PPT_HOME:-~/.codex-ppt-skill}/references/`, both are discovered by directory scan, and a same-name user file takes priority.
+- Integrate the complete pinned codex-ppt image-generation backend under `slidemuse.py generate` with `prepare`, `status`, `dispatch`, `result`, `blocker`, `assemble`, `chroma` and `runtime`. Upstream MIT attribution and pinned source hashes are verified by `generate capabilities --verify-source`.
+
+### Changed
+
+- The outline gate now requires reporting the outline location, page count, layout-role list and source-image-to-slide mapping, and stating that no slide image or PPTX exists yet. Page Specs, style overviews, generation prompts and final images stay forbidden until the content version is approved.
+- Keep the Page Spec route unchanged; the generate backend is an alternative S5 pipeline with its own artifacts. One task uses one source of truth: `slide_jobs.json` is not a `page-spec.json`, `prepare` never calls an image model, and every final slide image still comes from the confirmed host image backend.
+- Provide `--with-generate` for isolated optional dependencies, and `generate --offline` for local job, status, recording, assembly and chroma-key work that ignores user config and credentials.
+
+### Fixed
+
+- Mark `scripts/editable_backend.py` and `scripts/generate_backend.py` executable so Linux runners stop reporting `EXE001`; both files carried a shebang while committed as `100644`, which had kept the ubuntu lint step red since the reconstruction backend landed.
+- Add `requirements-generate.txt` to the development requirements so the CI environment installs `filelock`; without it the generation-backend tests failed with `ModuleNotFoundError`.
+- Re-record all vendored source hashes on an LF (git-blob) basis and verify them with newline normalization. The previous CRLF-basis hashes could never match on Linux checkouts, so every `capabilities --verify-source` integrity test failed on ubuntu while passing on Windows.
+- Import `pymupdf` directly in the vendored PDF normalization instead of the deprecated `fitz` shim. Newer PyMuPDF versions print a deprecation warning into captured stdout, which made `rebuild prepare` misread the `deck_manifest.json` path and fail PDF normalization tests.
+- Accept the standard `fonts-liberation` path in the vendored slide-layout test font lookup so Linux CI runners with that package installed always find a scalable font.
+
+## [2.19.0] - 2026-10-17
+
+### Added
+
+- Integrate the complete pinned image-to-editable reconstruction backend under `slidemuse.py rebuild`, including input normalization, offline text measurements, optional OCR, native paths/tables, asset-sheet processing, formula assets and resumable page jobs. Upstream MIT attribution and pinned source hashes are verified by `rebuild capabilities --verify-source`.
+- Add Scene table merges/row weights, saved-table grid and merge audits, and actual cell vertical-alignment/margin settings with a reproducible merged-table example.
+
+### Changed
+
+- Keep existing Scene/data-chart workflows; provide `--with-editable` for isolated optional dependencies and `rebuild --offline` for local processing.
+- Apply Windows/Linux preview-font discovery and UTF-8 subprocess execution to the vendored backend with recorded patch hashes.
+- Align guides and research notes with the offline core tools versus the optional networked OCR/image services of the complete backend.
+
+## [2.18.0] - 2026-10-16
+
+### Added
+
+- An optional `preserve_asset` Page Spec contract binds independent evidence images to SHA-256 hashes and exact, aspect-preserving regions in final lossless slides. Validation rejects changed source files, altered evidence pixels, overlaps, cropping and transparent evidence.
+- Image-deck exports with protected evidence reject downscaling and JPEG re-encoding. The release package includes the validator module and evidence-asset guide.
+- Regression cases cover source drift, evidence-pixel changes, surrounding-page edits, aspect ratios, paths, overlap, transparency and preservation in exported PPTX media.
+
+### Changed
+
+- Research maps, experiment screenshots and precise charts default to original-asset preservation or data-driven plotting, with generated illustrations explicitly identified as such.
+- Production calibrates one representative final slide before continuing, requires complete observations for critical visible text, and separates evidence fidelity, chart geometry and presentation readability checks.
+- Timed presentations distinguish planned timing from actual rehearsal and distinguish short prompts from full speaker scripts. New production tasks record generation, failure and repair events as they occur.
+
+### Scope
+
+- Pixel checks cover only declared protected regions and do not authenticate the source or validate the underlying research. Existing Page Specs remain compatible and are not retroactively certified.
+- Image-based production, the four-style selection workflow and optional editable reconstruction remain supported. Workflow changes do not claim a measured reduction in production time or error rate.
+
+## [2.17.0] - 2026-10-08
+
+### Added
+
+- A dependency-free `slidemuse.py` entry point for common existing tools, preserving arguments, working directory and pipeline exit codes while selecting the local isolated Python.
+- Read-only runtime diagnosis with structured JSON, minimum-version and bounded import checks, shared renderer discovery, and actionable repair commands even when dependencies are missing.
+- Bilingual CLI documentation, structured bug/feature forms and a pull request template with reproduction, validation and compatibility context.
+
+### Changed
+
+- Installation includes the unified entry point and CLI guides; package and relocation regressions exercise the installed commands.
+
+## [2.16.3] - 2026-10-07
+
+### Changed
+
+- Replace the README hero's transportation cover with Weld Inspect and its architecture slide with the second red-and-gold showcase image, the ceramic restoration process page.
+- Keep Snowline Watch in the hero and update both READMEs' descriptions and image cache version for the new selection.
+
+## [2.16.2] - 2026-10-07
+
+### Changed
+
+- Refresh the bilingual README hero with a light background, prominent SlideMuse wordmark and presentation cards based on the existing transportation, glacier-inspection and manufacturing showcases.
+- Include the lossless WebP hero in the release package and update both READMEs to use the same asset.
+
+## [2.16.1] - 2026-10-06
+
+### Added
+
+- A public six-slide editable IRENA sample with image/native decks, four independent editing exercises, source PDF, portable inputs, before/after previews and a PowerPoint-export comparison video.
+- A complete sample archive containing pinned runtime scripts and a reproduction command that checks native objects, embedded chart workbooks and speaker notes.
+- Bilingual guides and homepage download links, with historical independent acceptance and current rebuild verification recorded separately.
+- The installer includes the public sample when present; packaged-install regression rebuilds all six decks from the installed files.
+
+### Scope
+
+- The sample covers selected 2024 statistics and the original 2025 report-time scenario. Edited table/chart pages explicitly identify synthetic values.
+- Reproduction starts from approved images and structured inputs. Native fills and chart axes differ visually from the image version as documented.
+
+## [2.16.0] - 2026-10-03
+
+### Added
+
+- Bounded renderer subprocesses with configurable timeout, limited safe retries and ownership-checked PowerPoint cleanup that preserves pre-existing interactive sessions.
+- Automatic render-cache fingerprints for renderer executable bytes, installed fonts, system and Python dependency versions.
+- Optional actual PowerPoint text/table bounds and text-overlap diagnostics, cached with page evidence and surfaced as actionable review tasks.
+- Six-page real-backend regression controls and a dedicated LibreOffice/Poppler CI job with exported images.
+- Append-only production event logs with explicit generation calls, revised pages, measured review time, wall time and preserved first/final delivery outcomes.
+
+### Fixed
+
+- A shared BOM-tolerant JSON reader keeps Page Spec, Scene, data bindings and review evidence consistent throughout validation and delivery.
+- Visible numeric dependency changes invalidate only the relevant pages and their transitive provenance; unrelated rendered pages and genuinely recorded reviews remain reusable.
+
+### Scope
+
+- PowerPoint measurements are diagnostics, not automatic visual approval; grouped/rotated text and chart labels still require visual inspection.
+- Production metrics cover explicitly recorded events only; missing times remain unknown, and repaired final success does not erase first-delivery failure.
+
+## [2.15.0] - 2026-10-02
+
+### Added
+
+- Conservative native text layout estimates in editable compilation, object auditing and delivery scorecards, including individual table cells and grouped objects.
+- Page/element-specific Chinese overflow tasks in pipeline summaries and the existing review panel. Explicit current visual review resolves tasks while retaining estimates in reports.
+
+### Changed
+
+- Reorganize both READMEs around installation and current capabilities, including speaker notes, linked data updates, resumable delivery, and optional review tooling.
+- Document rendering prerequisites, prepared-task CLI usage, output files, and pending-review semantics; remove duplicated installation instructions and the fixed installation-time claim.
+- Unresolved inheritance, auto-fit, transformed groups and unsupported text layouts remain explicitly unverified. Estimates neither modify content nor replace actual rendering and visual review.
+
+## [2.14.1] - 2026-10-02
+
+### Changed
+
+- Clarify in both READMEs that the review panel is optional, records findings and issue locations, and does not require users to fill every page manually. Agents may record checks after actual visual inspection or use the existing JSON workflow.
+- Document the exported-text fallback and the requirement to rerun evaluation after importing review records.
+
+## [2.14.0] - 2026-10-02
+
+### Added
+
+- Offline per-page review panel with embedded source/render images, current tasks, visual notes, content observations, data subchecks and actual data-visual inventory.
+- Download/load review drafts and explicitly import them through `review_panel.py`; exact current input/artifact/record bindings reject stale or concurrently changed evidence.
+- Import archives prior records and invalidates the old scorecard. A checked journal completes interrupted two-file commits before subsequent scoring; external evidence remains read-only.
+
+### Changed
+
+- Pipeline summaries link to the current panel; pending and failed checks remain explicit and require a new evaluation after import.
+- Pipeline JSON writes use deterministic LF bytes for cross-platform import recovery hashes.
+
+## [2.13.0] - 2026-10-02
+
+### Added
+
+- `init_deck.py` generates portable image/editable job configuration with exclusive creation; existing jobs, source files and approval states are preserved.
+- Read-only `run_deck.py --check` collects missing page images, approval states, invalid specifications/assets/notes, workspace ownership and renderer environment problems before execution.
+- Chinese status labels, page-specific review tasks with current file/image paths, retained original diagnostics and a readable Chinese summary. Stable machine status/kind fields remain compatible.
+- Actual per-stage tool timings for validation, build/object checks, rendering/template preparation and evaluation; preparation and human review are explicitly outside these timings.
+
+### Fixed
+
+- A stopped stage summary no longer describes the entire delivery as passed.
+- UTF-8 BOM job files are accepted consistently with Page Spec inputs.
+- Review-sheet thumbnails adapt to the actual page aspect ratio, making portrait source pages readable without a fixed landscape thumbnail box.
+
+## [2.12.0] - 2026-10-02
+
+### Added
+
+- Unified `run_deck.py` command for validated image/editable builds, rendering, review templates, live evaluation and a consolidated action queue.
+- Atomic checkpoints, process-released workspace locking, hash-verified artifacts and resumable stages, including recovery after actual process termination.
+- Per-page render keys and conservative migration of genuine recorded reviews for unchanged pages. Changed pages stay pending; whole-deck scorecards are regenerated each run.
+- Selected-slide PowerPoint export and selected-page LibreOffice rasterization, with full PDF conversion retained. Backend changes invalidate all cached renders.
+- Read-only status, deliberate stage stops and forced rendering refresh after font or renderer environment changes.
+- Pipeline configuration example and documentation covering approval prerequisites, cache boundaries, external evidence preservation and exit codes.
+
+### Changed
+
+- Runtime and schema changes invalidate cached work; speaker-note-only changes rebuild the deck and recheck notes while retaining unchanged page images.
+- Superseded scorecards and review records are archived before replacement, so interrupted work does not leave an old pass as the current result.
+
+## [2.11.0] - 2026-10-02
+
+### Added
+
+- Precise standalone grouped horizontal bar and vertical column figures with named series, legends, shared zero axes, signed values, bounded labels, atomic PNG writes and optional authorized region replacement.
+- Independent observed endpoint checks for grouped bar/column charts; category and series identity and numeric-axis direction are checked. Existing single-series observations remain supported.
+- Optional explicit numeric dependency contracts for Page Spec/Scene chart/table leaves, derived arithmetic, visible prose and speaker notes. Preview changes without writes, or export a separate asset-preserving review draft; reject stale bindings, cycles, unsafe expressions, zero division and nonfinite results.
+- Optional `evaluate_delivery.py --data-bindings` checks with hash-bound contract/document evidence; inconsistent declared prose, data or notes fail delivery.
+- A reproducible two-page synthetic transport example with grouped charts and 26 bindings, demonstrating a data change propagated to 14 targets.
+
+### Changed
+
+- Visible-content draft exports invalidate Page Spec approval and affected image status; old source files and quality records remain unchanged. Source/semantic review and fresh rendering are still required under the task's existing authorization.
+- Standalone construction geometry uses region coordinates, while replaced-page geometry uses page coordinates. Construction values are not independent observations.
+
+### Scope
+
+- Stacked/logarithmic charts, external workbook formula evaluation and automatic semantic dependency discovery remain unsupported. New example figures are synthetic engineering checks, not a general first-pass reliability claim or new formal holdout acceptance.
+
+## [2.10.0] - 2026-10-01
+
+### Added
+
+- Multi-material benchmark records with a frozen source registry and rubric, hash-bound evidence, append-only delivery history, separate first/final results, and all registered materials in the denominator. Actual delivery checks and editing exercises are rerun; missing or changed evidence cannot become a pass.
+- A verified content-contract projection for independent review that excludes generation prompts and author work judgments. Review input isolation and actual source/visual judgments remain the reviewer's responsibility.
+
+### Fixed
+
+- Native chart auditing now checks the actual embedded workbook cells referenced by each series, category and label. Changing only the display cache cannot pass as an editable data update.
+- Benchmark evidence includes reference images actually consumed by Scene auditing, including references used by editing exercises.
+- Data-update review covers dependent differences, percentages, conclusions and presenter notes; native cell changes alone do not establish a consistent edited page.
+
+### Scope
+
+- These tools support evaluation; they do not prove semantic correctness or reviewer identity. A development prototype or passing software tests do not demonstrate the 30-material acceptance target.
+
+## [2.9.0] - 2026-10-01
+
+### Added
+
+- Optional Page Spec/Scene `speaker_notes` preserved in image and editable PPTX, checked after save/reopen. Editable compilation can verify upstream slide IDs/order and declared notes with `--page-spec`.
+- Exact-note auditing of actual PPTX and optional Scene, integrated into delivery scorecards and object auditing. Explicit empty notes reject residual text; old Page Specs without declared notes remain compatible, and legacy Scene notes remain supported.
+- A hash-bound Markdown speaker-note companion with recorded source references, preserving text without inferring presenter content from work records.
+- Material-specific semantic review for research mechanisms/formulas, experiment scope, source conflicts, policy targets and observed effects, informed by official Slidev/Marp documentation.
+
+### Changed
+
+- Notes-only updates rebuild exports while reusing approved page images. Visible copy/layout changes retain the existing regeneration and approval rules.
+- Production notes are separated from Page Spec work records. Notes fidelity is not a semantic depth score and does not replace required visible evidence or user approval.
+
+## [2.8.0] - 2026-09-30
+
+### Added
+
+- Separate chart source/label/geometry checks and a per-page data-visual inventory in hash-bound visual review v1.2. Missing checks keep delivery incomplete; failed subchecks and unlisted data visuals fail delivery.
+- A finite-retry chart repair workflow, a hash-bound audit of independently observed zero-based single-series bar/column geometry, and a precise horizontal-bar raster region fallback that preserves pixels outside an explicitly selected rectangle. Host image-edit authorization still applies.
+- Scene-native chart point colors, negative-value inversion, label position/size, axis visibility/order, bar gaps, doughnut hole/angle, normalized inner plot layout, and rounded rectangle adjustment. Exported settings are audited without reapplying them.
+
+### Changed
+
+- Image prompts forbid decorative unsupported data visuals, including unlabeled curves/scatter/axes on research-proposal slides. Numeric labels and geometry are reviewed separately.
+- Default presentation of artifacts avoids redisplaying tool-visible images, historical drafts, and intermediate repair previews; all inspection evidence remains saved.
+- Legacy v1.1 reviews remain historical evidence and require actual additional checks in a new v1.2 template; no version-only migration. Content-depth and approval gates retain their scope.
+
+## [2.7.0] - 2026-09-30
+
+### Added
+
+- Content-depth reference with a reviewable slide-by-slide draft, purpose-specific guidance, traceable evidence, interpretation boundaries, and a worked example of repairing an unsupported claim.
+- A semantic content-quality review before style selection, with versioned findings and repairs recorded separately from user approval or explicit content delegation. It is not an automated depth score.
+
+### Changed
+
+- Step 1A and the deck specification now include the deck's central question and answer, narrative progression, actual visible copy/chart content, and optional speaker notes. Covers and transitions remain concise without universal word counts or text ratios.
+- Style previews, Page Spec creation, and image prompts preserve approved supporting explanations and qualifications instead of reducing the draft to titles and large numbers. Content updates repeat only affected reviews and retain existing authorization.
+- Bilingual documentation and the Codex starter prompt describe content review and the subsequent approval gate. The new reference is included in release packages and runtime installations.
+
+## [2.6.1] - 2026-09-30
+
+### Fixed
+
+- Installer success output uses an ASCII status label so Windows GBK output does not raise a UnicodeEncodeError after a successful installation.
+- Release archives include their manifest so the bundled installer can register every required runtime root. A regression test installs from the exact manifest-packaged ZIP rather than only from the source checkout.
+
+## [2.6.0] - 2026-09-30
+
+### Fixed
+
+- Delivery evaluation verifies each current Page Spec reference image against the render report hash, rejecting replaced images even when new content observations are supplied with an old deck and review.
+- Visual review v1.1 binds Page Spec, reference image hashes and the render backend as well as the deck and rendered PNGs. Legacy evidence must be recreated and reviewed instead of silently passing.
+
+### Added
+
+- Chart and table elements have independent data-review entries with required notes for pass/fail. Missing or pending data reviews keep delivery incomplete; failed data reviews fail delivery. Scorecards retain per-element findings.
+- Optional Page Spec `depends_on_slide_count` marks pages displaying total-page counts or depending on deck size.
+
+### Changed
+
+- Appending or removing pages no longer regenerates every unchanged image. Updates target new pages, changed content/order and explicit total-count dependencies while still rebuilding exported decks.
+
+## [2.5.0] - 2026-09-24
+
+### Added
+
+- `evaluate_delivery.py` combines hash-bound render output, complete content observations, per-slide visual review, and optional Scene editability audit into a repeatable delivery scorecard. Missing review evidence remains `incomplete`; stale artifacts are rejected.
+- Render reports now record the PPTX, Page Spec, and per-slide PNG hashes so evaluation cannot silently reuse an earlier render.
+
+## [2.4.0] - 2026-09-24
+
+### Added
+
+- `audit_page_content.py` compares hash-bound visual transcriptions with confirmed Page Spec text and explicitly required visible values. Incomplete or stale observations cannot pass its strict gate.
+- `plan_deck_update.py` snapshots approved page and style-reference hashes, then reports slides to reuse, review or regenerate after content, order or style changes.
+- Optional per-slide `required_visible_values` captures chart labels and other facts that must be readable in the final image.
+
+## [2.3.0] - 2026-09-24
+
+### Added
+
+- `render_deck.py` renders every PPTX slide using PowerPoint or LibreOffice/Poppler, producing numbered PNGs, a review sheet, and a JSON report. With Page Spec it adds source/render/difference comparison, including historical `revision` references.
+- Optional structured `style.tokens` in Page Spec records palette, typography, layout, image treatment and selected reference images; new tasks use it while older specs remain valid.
+
+### Changed
+
+- Raster text overlay fails instead of exporting a page when text exceeds its box. Documentation and skill steps now route image and editable PPTX through the same rendering review tool.
+
+## [2.2.3] - 2026-09-23
+
+### Fixed
+
+- Windows 刚使用完虚拟环境时可能短暂锁定技能目录；安装器在目录切换时对该类错误进行有界重试，使完整安装与升级能继续完成。
+
+## [2.2.2] - 2026-09-23
+
+### Added
+
+- Scene 图表新增数值轴范围、主网格线及其颜色、坐标轴标签颜色和数据标签颜色；导出和对象审查均支持这些设置。
+
+### Changed
+
+- 缩短技能入口描述，保留完整流程说明在正文中。
+- 发布流程覆盖清单中的文件路径，并在同一版本的打包内容发生变化时要求升版。
+- 文档中的反馈入口改为仓库已开放的 Discussions。
+
+### Fixed
+
+- 安装器在同时检测到多个受支持客户端时不再静默优先选择 Codex；现在会要求通过 `--client` 明确指定目标，避免安装到错误的 Skill 目录。
+- 安装器现在也能发现旧 Codex 技能目录中的 `image-ppt`，在安装新名称后给出迁移提示。
+- 安装与升级先在临时目录完成依赖安装和自检；新目录激活后再次验证，失败时恢复旧版，避免半更新状态。
+- `--skip-deps` 升级不再沿用旧环境的 `.skill-python` 路径；CI 增加真实隔离安装与升级检查。
+
+## [2.2.1] - 2026-09-20
+
+### Changed
+
+- 统一 GitHub 与技能元数据定位：以大学生竞赛 PPT 为重点，同时保留学术汇报、论文答辩、项目路演、课程展示、电影质感 PPT 与图片转可编辑 PPT 等通用场景。
+- README 重点赛事补充全国大学生交通运输科技大赛（交科赛），并继续覆盖挑战杯（大挑/小挑）、中国国际大学生创新大赛、三创赛、正大杯和大创等场景。
+- 中英文 README、SKILL.md、Agent 元数据与 manifest 同步更新；新增交科赛和课程展示相关触发词。
+
+
+## [2.2.0] - 2026-09-20
+
+### Changed
+
+- 项目品牌由 image-ppt 升级为 **SlideMuse**；GitHub 仓库同步更名为 `helloo1568/slidemuse`，旧地址由 GitHub 重定向兼容。
+- Skill 正式调用名改为 `$slidemuse`，并同步 README、OpenAI Agent 元数据、使用指南与发布包命名。
+- README 首屏增加 30 秒安装入口，优先引导用户让 Agent 自动执行安装器。
+
+### Added
+
+- 强化 `install.py`：自动识别 Codex / Claude Code / OpenCode，创建隔离虚拟环境、安装依赖、运行自检，并安全提示旧 `image-ppt` 安装目录。
+- 增加安装器 dry-run 测试，确保 Codex 默认安装路径与新 Skill 名保持一致。
+
+## [2.1.1] - 2026-09-18
+
+### Fixed
+
+- 风格阶段默认一次调用直接生成一套缩略总览，正常四套四次；新增本地缩略图排版工具，利用已有图片或明确裁切框完成缩放、网格和页码，不再为排版重复生图。
+- 风格预览明确使用横向缩略网格，禁止纵向整页长图；新增当前四套候选清单与结构验证，阻止竖图、缺图、重复方案和将修正稿误计成额外方案。网格与文字内容仍需视觉核验。
+- 图片版导出支持直接读取 Page Spec，仅按批准清单与页序合并，沿用画布比例，避免目录中的旧稿混入；验证失败保留既有输出。
+- Page Spec 交付验证拒绝重复图片路径与错误画幅，允许单像素取整误差并应用 EXIF 方向。
+- 可编辑性审查补齐图片位置、尺寸、裁切、翻转，以及嵌套组合的父子坐标变换和旋转检查。
+- 文字兜底保留完整非文字主体，避免在 Step 2 提前移除 Step 3 才需拆分的素材。
+- 统一内容代定授权后的继续规则；四套风格总览支持短稿、单页和任务指定比例。
+
+### Changed
+
+- 新增变更与恢复规则及规格记录：保存基准快照、版本和授权差异，按修改范围回退状态并使受影响产物失效。
+- 中英文作品集统一为单列等宽大图，保持原始宽高比；取消双列缩略图与单张展开大图混排。
+- 在中英文首页、应用场景和技能元数据中补充竞赛 PPT、电影质感 PPT、创新创业路演、学术汇报及图片转可编辑 PPT 等相关关键词。
+- 重设计中英文 GitHub 首页：品牌横幅、项目徽章、作品画廊、六项核心优势、三步流程与可复制的上手提示。
+- 将详细流程与技术命令整理到中英文使用指南，保留能力边界、验收方法和来源说明。
+
+### Added
+
+- 记录 2026-09-18 三页蓝图实战验收：133 项测试、PowerPoint 实际渲染、24→30 图表与工作簿更新、独立终端移动，以及 Scene 图表外观后处理的现有限制。
+- 增加挑战杯两类赛事、中国国际大学生创新大赛、三创赛和正大杯的具体应用场景、常见搜索词及官方来源链接。
+- 新增 SVG 品牌横幅和双语贡献指南，并将首页引用的新资源纳入分发清单。
+- 在中英文 README 首屏增加两套真实作品展示，并将安全页面预览图纳入仓库。
+- 红金案例作品集收录第 2–4 页。
+- 作品集图片改用源页面的 1672×941 像素尺寸，不再生成缩小版。
+
+### Removed
+
+- 删除旧版历史视觉素材、可编辑示例 PPTX、示例场景及其 README 展示。
+
+## [2.1.0] - 2026-09-16
+
+### Changed
+
+- 将 Step 1 拆为“内容大纲确认”和“风格方案确认”两个硬门禁；未确认内容时不得生成风格总览。
+- 明确四套方案的确定性豁免：严格沿用指定参考、明确跳过预览或明确授权代选，Agent 不得自行推断。
+- Step 3 改为 Page Spec 提供语义事实、页面图片提供视觉事实；已确认文字和数据不再通过 OCR 重新猜测。
+
+### Added
+
+- Page Spec v1、JSON Schema、示例和验证脚本，记录准确内容、来源、稳定元素 ID、原生/图片意图、位置提示与页面图片状态。
+- Page Spec 的 Schema、唯一 ID、连续页码、画布边界、路径约束和交付图片测试。
+- CI 增加 Page Spec 示例验证。
+
+## [2.0.1] - 2026-09-16
+
+### Changed
+
+- 将入口规范为唯一三阶段流程：内容提炼与四套幻灯片浏览视图 → 图片版逐页生成 → 经明确授权后的可编辑 PPTX 还原。
+- 恢复硬状态机与五项需求门禁；普通任务表达不再被解释为允许自主推断、代选或跳步。
+- Scene v1、分层素材和原生对象编译固定为第三阶段能力，不再作为绕过图片版的“编辑优先”替代路线。
+- 规范项目定位与平台说明：最佳推荐 Codex + GPT Image 2.5，其他 Agent 调用其自身生图/编辑能力；本地脚本不冒充图像后端。
+- 同步更新制作规格、阶段提示词、中英文 README、技能元数据和模型使用说明。
+
+### Compatibility
+
+- 保留 2.0.0 的 Scene v1、原生编译、素材裁剪、审查脚本和文件格式，不影响已有 scene.json。
+- 已有页面图片/扫描 PDF 的可编辑还原可按明确请求直接从第三阶段开始；已有可编辑 PPTX 的普通修改不进入本流程。
+
+## [2.0.0] - 2026-09-15
+
+### Changed
+
+- 默认改为编辑优先：先规划原生信息，再生成独立视觉素材；图片版仍可单独使用。
+- 移除普通请求强制确认四项需求及四轮风格门禁；用户要求风格选择时继续等待选型。
+- 更新 GPT Image 2.5 Sunburst / Flare 指南，区分宿主工具与直接 API，不假定工具支持指定模型。
+- 基于 PPT Master 等项目的公开方法补齐分层重建、背景清理、稳定坐标和逐元素验收规范。
+
+### Added
+
+- Scene v1 JSON Schema 与原生 PPTX 编译器，支持文字、形状、线/箭头、嵌套组合、独立图片、表格、五类图表及内嵌数据工作簿。
+- 素材裁剪与可选遮罩工具，记录来源、实际 bbox、透明度与文件哈希。
+- 可编辑性审查，检查原生对象、内容、数据、几何、层级、素材和原图残留。
+- 三页可运行场景、PowerPoint 导出的示例与预览、重建与调研参考文档。
+- 原生对象往返、编辑数据、错误场景、alpha、裁剪与兼容性测试；Windows/Linux CI。
+
+### Compatibility
+
+- 原有 build_image_ppt.py / overlay_text.py 命令和示例继续可用。
+- 新脚本增加 jsonschema 依赖，要求 Python 3.10+。
+- 本地脚本不自动识图、执行 OCR、调用生图 API 或推断隐藏信息；宿主 Agent 完成识别和生图。
+- 复杂插画是独立可替换图片，不宣称所有像素或曲线均已原生化。
+
+## [1.5.0] - 2026-09-05
+
+### Fixed
+
+- `build_image_ppt.py`：`--fit cover` 不再把图片以负坐标溢出画布，改为整页放置 + 居中裁剪。放映效果不变，但 PowerPoint 编辑视图里不再出现挂在画布外的图片。
+- `build_image_ppt.py`：自动应用 EXIF 方向信息，带旋转元数据的照片不再出现宽高比计算错误。
+
+### Added
+
+- `build_image_ppt.py`：新增 `--max-width` 与 `--jpeg-quality`，嵌入前等比缩小 / 重编码 JPEG，大型图片版 PPT 的体积可降低一个数量级；透明图片会先合成到 `--background` 指定的背景色。
+- 新增 `scripts/overlay_text.py`：按 JSON 规格将准确文字确定性叠加到背景图上（百分比坐标、自动换行、对齐、行距、加粗、纯色页），作为生图模型文字不可靠时的兜底，对应 SKILL.md Step 2 的混合制作方式。
+- 新增 `tests/` pytest 测试套件（20 个用例）与 GitHub Actions CI（ruff lint + pytest，Python 3.10–3.13 矩阵）。
+- 新增 `CHANGELOG.md`、`requirements-dev.txt` 与 `examples/overlay-spec.example.json`。
+
+### Changed
+
+- `build_image_ppt.py`：页面背景改用幻灯片背景填充替代整页矩形，减少编辑时可误选中的形状；图片形状以源文件名命名，便于在 PowerPoint 中识别与导航。
+- 中文 README 效果展示补齐缺失图片并改用仓库内相对路径，不再依赖外部 CDN 热链。
+- `manifest.yaml` 版本升至 1.5.0，文件清单与仓库实际内容同步。
+
+## [1.4.0] 及更早
+
+见提交历史。

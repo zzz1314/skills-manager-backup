@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "30bc13d1-23c5-4b0a-b821-02f26e9ea24e",
+  "path": "slidemuse",
+  "path_key": "slidemuse",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/helloo1568/slidemuse.git",
+    "subpath": null,
+    "branch": null
+  }
+}

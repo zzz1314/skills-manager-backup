@@ -1,0 +1,87 @@
+# 方法调研与实现取舍
+
+2026-10-08 的命令入口、环境诊断与贡献体验对标见[本轮优化记录](../docs/open-source-improvements-2026-10-08.md)，包含六个项目的一手来源、适用判断和验证边界。
+
+核验日期：2026-09-15。以下是来源项目公开文档描述，不是本项目实测排名。
+不使用随时变化的 Star 数或未经复现的相似度数字作为性能承诺。
+
+## 2.9.0：Slidev 与 Marp 的讲稿/公式处理
+
+再次核验：2026-10-01。查阅 [Slidev 导出](https://sli.dev/guide/exporting.html)、[逐页讲稿](https://sli.dev/guide/syntax.html#notes)、[LaTeX](https://sli.dev/features/latex)，及 [Marp Core Markdown](https://github.com/marp-team/marp-core/blob/main/docs/markdown.md)。
+
+Slidev 将逐页讲稿保留到图片型及可编辑 PPTX；其导出文档也明确公式等复杂元素可能作为独立图片。Marp 使用数学排版插件并提供部分块的水平缩放，同时说明底部仍可能溢出。上述是官方文档能力，未在本项目环境中安装或做性能比较。
+
+SlideMuse 本轮独立实现 `speaker_notes` 的图片/原生导出、实际备注核对、带来源的讲稿文件及讲稿变更时复用图片。论文审阅保留准确公式和可见解释，复杂公式允许独立栅格并如实说明编辑限制；不声称已支持 KaTeX、原生 Office 公式或通用自动排版。没有复制第三方源码或改变图片优先流程。
+
+## PPT Master（重点参考）
+
+项目：[hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)，作者 Hugo He，MIT。
+查阅：[Image to PPTX profile](https://github.com/hugohe3/ppt-master/blob/main/skills/ppt-master/workflows/profiles/image-to-pptx.md)、
+[生成流程](https://github.com/hugohe3/ppt-master/blob/main/skills/ppt-master/workflows/generate-pptx.md)、
+[技术设计](https://github.com/hugohe3/ppt-master/blob/main/docs/technical-design.md)。
+
+值得借鉴的是将原生信息和独立图像层分别处理，并以结构化源文件生成 PPTX。
+本项目吸收其同源坐标分层、背景清理、稳定命名和结果复查思路。
+SlideMuse 选择更小的 JSON 场景协议，直接生成原生对象；未实现 PPT Master 的 SVG 编译体系、母版系统、动画或旁白。
+不要求安装 PPT Master，也不自动运行其工具。
+
+## banana-slides
+
+项目：[Anionex/banana-slides](https://github.com/Anionex/banana-slides)。
+查阅：[英文功能说明](https://github.com/Anionex/banana-slides/blob/main/README_EN.md)。
+
+提供从大纲/页面描述生成图片演示、局部修改与可编辑导出的产品流程。
+本项目保留图片视觉探索，再把可修改的信息提前规划成原生对象。
+只借鉴流程，不引入 Web 服务、账号、异步任务队列或其图像后端。
+
+## PPTAgent / DeepPresenter
+
+项目：[icip-cas/PPTAgent](https://github.com/icip-cas/PPTAgent)。
+查阅：[论文](https://arxiv.org/abs/2501.03936)。
+
+关注参考演示分析、编辑式生成和内容/设计/连贯性的评估。
+本项目将“生成后回看”落实为结构审查和实际渲染两条检查路径，不把 PPTX 能解压当成视觉通过。
+
+## 图像重建的其他实践
+
+[BrainChen/image2ppt](https://github.com/BrainChen/image2ppt) 展示布局识别、文字补充、结构描述与 PPTX 编译的分工。
+[px-image2pptx](https://github.com/JadeLiu-tech/px-image2pptx) 展示 OCR 与背景修复后恢复文本的路线。
+这些方法说明“文字可编辑”和“主体也独立”是不同验收目标。本版明确区分原生信息与独立栅格素材。
+
+## image-to-editable-ppt-skill（可选完整重建后端）
+
+项目：[ningzimu/image-to-editable-ppt-skill](https://github.com/ningzimu/image-to-editable-ppt-skill)，MIT。
+查阅：[SKILL 与 runtime](https://github.com/ningzimu/image-to-editable-ppt-skill/tree/b7be494e31a0ed56ef98716891db5474606b8cdf)。
+核验固定提交 `b7be494e31a0ed56ef98716891db5474606b8cdf`。
+
+本项目按 MIT 许可证随包保留其源码、字段参考、提示模板和测试，记录原始文件哈希与本地补丁哈希（见 [upstream.json](../vendor/image-to-editable/upstream.json)），并通过 `slidemuse.py rebuild` 统一入口调用，不安装其全局 `editppt` 命令。
+上游的直接重建路线与本项目既有 Scene 路线并行：Scene 继续保留原生数据图表，完整后端按其 Manifest 格式交付；一项任务按输出格式保持单一事实源，不互相转换。上游要求所有前景都经生图提取的做法不覆盖本项目受保护证据和已有透明原始素材的保留规则。
+安装、命令与边界见[完整重建后端](editable-backend.md)，Scene 路线的适配方法见[上游参考](upstream-editable.md)。
+
+## codex-ppt-skill（可选完整图片生成后端）
+
+项目：[ningzimu/codex-ppt-skill](https://github.com/ningzimu/codex-ppt-skill)，MIT。
+查阅：[SKILL、docs 与 scripts](https://github.com/ningzimu/codex-ppt-skill/tree/941dcafe2f23ea4ae61de99e9b22fb0ef3d9e06c)。
+核验固定提交 `941dcafe2f23ea4ae61de99e9b22fb0ef3d9e06c`。
+
+与本项目同作者、属同一条流水线的**前半段**：本项目已接入的完整重建后端默认读取同一运行目录，说明两者的产物约定本就衔接。本项目按 MIT 许可证随包保留其源码、文档、提示模板、12 套风格参考和测试，记录原始文件哈希（见 [upstream.json](../vendor/codex-ppt/upstream.json)），并通过 `slidemuse.py generate` 统一入口调用。
+
+本次接入主要吸收三件事：**① 大纲的信息密度下限**——每个内容页 3–5 条支撑要点、页面类型枚举（12 种）与每类必答内容，本项目此前只声明“不设要点数量”，是密度的主要缺口；**② 可复用风格库**——风格存于技能安装目录之外并按目录扫描发现，与逐任务四套选型并存；**③ 逐页任务与状态机**——任务文件、分派/结果/阻塞登记和图片版组装，用于需要并发生成的多页任务。
+
+接入边界：一条任务只用一套产物，`slide_jobs.json` 不当作 `page-spec.json`；`prepare` 是确定性脚本，不调用生图模型，成品图仍由宿主 Agent 的生图能力产出；上游允许本地绘制或叠加文字的做法不改变本项目“成品图必须来自已确认生图后端”的规则。
+
+## 结论：本次实际实现
+
+| 能力 | 2.0 实现 |
+|---|---|
+| 逐元素表达 | Scene v1：稳定 ID、像素框、层级、来源、置信度 |
+| 原生编辑 | text / shape / line / group / table / chart |
+| 分离图片 | 独立 PNG，已知框/遮罩裁剪工具 |
+| 背景补全 | 宿主图像工具执行，技能提供分层与核验规范 |
+| 图像识别 | 宿主视觉 Agent 执行；额外的可选 `rebuild` 提供本地文字尺寸提示与需自行配置的 OCR 接口 |
+| 修改迭代 | 修改 scene 或单一素材，再编译 |
+| 检查 | 声明对象与实际 PPTX 对比，另做渲染核验 |
+| 通用 SVG 编译 / 动画 / 母版还原 | 未实现 |
+
+Scene 编译器为独立实现，未复制上述方法参考项目的源码；可选安装的完整重建后端按 MIT 许可证随包保留 image-to-editable-ppt-skill 的固定提交源码并记录哈希。
+引入第三方代码或资产时保留对应许可证与归属，并针对其版本验证兼容性。
