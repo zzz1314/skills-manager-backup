@@ -5,6 +5,7 @@
   "sort_order": 120,
   "tools": {
     "codex": true,
-    "workbuddy": true
+    "workbuddy": true,
+    "zcode": true
   }
 }
