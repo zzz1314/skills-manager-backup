@@ -196,6 +196,15 @@ Agent 只使用已确认事实撰写；网页只读展示事实状态，修改�
 </details>
 
 <a id="licenses"></a>
+## Star History
+
+<a href="https://www.star-history.com/?repos=stonell1%2Fresume-builder&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=stonell1/resume-builder&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=stonell1/resume-builder&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=stonell1/resume-builder&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## 致谢与许可
 
