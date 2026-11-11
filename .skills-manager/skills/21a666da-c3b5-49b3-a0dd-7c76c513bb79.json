@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "21a666da-c3b5-49b3-a0dd-7c76c513bb79",
+  "path": "academic-research-suite",
+  "path_key": "academic-research-suite",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}
