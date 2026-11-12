@@ -4,7 +4,9 @@
   "path": "interview-radar",
   "path_key": "interview-radar",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "简历"
+  ],
   "source": {
     "type": "import",
     "ref": null,

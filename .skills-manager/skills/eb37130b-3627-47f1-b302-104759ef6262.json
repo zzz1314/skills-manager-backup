@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "eb37130b-3627-47f1-b302-104759ef6262",
+  "path": "add-svg-2",
+  "path_key": "add-svg-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/QIANJINYDX/research-drawio-skill.git",
+    "subpath": "skills\\add-svg",
+    "branch": null
+  }
+}

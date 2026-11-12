@@ -4,7 +4,9 @@
   "path": "tob-sales-assistant",
   "path_key": "tob-sales-assistant",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "简历"
+  ],
   "source": {
     "type": "import",
     "ref": null,

@@ -4,7 +4,9 @@
   "path": "tob-sales-coach",
   "path_key": "tob-sales-coach",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "简历"
+  ],
   "source": {
     "type": "import",
     "ref": null,

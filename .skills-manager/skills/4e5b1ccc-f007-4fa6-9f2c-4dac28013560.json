@@ -4,7 +4,9 @@
   "path": "get-job",
   "path_key": "get-job",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "简历"
+  ],
   "source": {
     "type": "import",
     "ref": null,

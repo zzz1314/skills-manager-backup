@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b713ef01-1d8f-46a7-9a5f-8cd95ef0f252",
+  "path": "draw-science-2",
+  "path_key": "draw-science-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/QIANJINYDX/research-drawio-skill.git",
+    "subpath": "skills\\draw-science",
+    "branch": null
+  }
+}

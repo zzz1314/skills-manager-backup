@@ -4,7 +4,9 @@
   "path": "resume-builder",
   "path_key": "resume-builder",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "简历"
+  ],
   "source": {
     "type": "git",
     "ref": "https://github.com/StoneLL1/resume-builder.git",
