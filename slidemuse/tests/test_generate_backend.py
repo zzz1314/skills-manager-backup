@@ -57,6 +57,28 @@ def test_complete_sources_are_verified():
     assert "outline-driven-slide-jobs" in result["features"]
 
 
+def test_slidemuse_model_adaptation_defaults_and_sizes():
+    """Declared upstream patches: gpt-image-2.6 default with the GPT Image 2 size envelope."""
+    scripts = str(ROOT / "vendor/codex-ppt/skills/codex-ppt/scripts")
+    sys.path.insert(0, scripts)
+    try:
+        import codex_ppt_runtime
+        import image_gen
+        assert image_gen.DEFAULT_MODEL == "gpt-image-2.6"
+        assert codex_ppt_runtime.DEFAULT_MODEL == image_gen.DEFAULT_MODEL
+        for size in ("2560x1440", "3840x2160", "1536x1024"):
+            image_gen._validate_size(size, "gpt-image-2.6")
+        for size in ("4096x2160", "256x256", "1025x1024"):
+            with pytest.raises(SystemExit):
+                image_gen._validate_size(size, "gpt-image-2.6")
+        with pytest.raises(SystemExit):
+            image_gen._validate_quality("max", "gpt-image-2.6")
+        image_gen._validate_size("3840x2160", "gpt-image-2")
+        image_gen._validate_size("2560x1440", "gpt-image-2.5-flare")
+    finally:
+        sys.path.remove(scripts)
+
+
 def test_prepare_writes_per_slide_jobs_and_state(tmp_path):
     deck = run_pipeline(tmp_path)
     prompt = json.loads((deck / "prompts/slide_02.json").read_text(encoding="utf-8"))
@@ -148,6 +170,51 @@ def test_unknown_command_reports_available_commands():
     result = invoke("not-a-command")
     assert result.returncode == 2
     assert "assemble" in result.stderr
+
+
+def test_fyai_setup_offline_rejected():
+    result = invoke("--offline", "fyai-setup", "--api-key", "x")
+    assert result.returncode == 2
+    assert "offline" in result.stderr.lower()
+
+
+def test_fyai_setup_requires_api_key():
+    result = invoke("fyai-setup")
+    assert result.returncode != 0
+
+
+def test_fyai_setup_runs_three_steps_without_printing_key(monkeypatch, capsys):
+    calls = []
+
+    class Completed:
+        returncode = 0
+
+    def fake_run(cmd, env=None, check=False):
+        calls.append(cmd)
+        return Completed()
+
+    monkeypatch.setattr(generate_backend.subprocess, "run", fake_run)
+    assert generate_backend.fyai_setup(["--api-key", "SECRET-KEY-123"]) == 0
+    assert [cmd[2] for cmd in calls] == ["bootstrap", "config", "doctor"]
+    assert "SECRET-KEY-123" in calls[1]
+    assert "--base-url" in calls[1] and "https://fyai.uk/v1" in calls[1]
+    assert "SECRET-KEY-123" not in capsys.readouterr().out
+
+
+def test_fyai_setup_stops_at_first_failed_step(monkeypatch):
+    calls = []
+
+    class Completed:
+        def __init__(self, returncode):
+            self.returncode = returncode
+
+    def fake_run(cmd, env=None, check=False):
+        calls.append(cmd[2])
+        return Completed(1 if cmd[2] == "config" else 0)
+
+    monkeypatch.setattr(generate_backend.subprocess, "run", fake_run)
+    assert generate_backend.fyai_setup(["--api-key", "k"]) == 1
+    assert calls == ["bootstrap", "config"]
 
 
 @pytest.mark.parametrize("name", ["普通 deck", "带 空格 的 deck"])

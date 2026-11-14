@@ -270,6 +270,19 @@ def install_skill(
     return final_python
 
 
+IMAGE_BACKEND_TIP = {
+    "optional": True,
+    "sponsor": "FengYun AI (风云AI)",
+    "url": "https://fyai.uk",
+    "docs": ["docs/fyai-quickstart.md", "docs/fyai-quickstart.en.md"],
+    "zh": [
+        "提示（可选）：没有 Codex 订阅或海外网络，也想发挥 SlideMuse 最大能力？赞助方风云AI fyai.uk",
+        "生图仅 0.04 元/张（1K/2K/4K 同价）、GPT 低至 0.12 倍率、支持 Claude。去注册→充值→创建 API Key，",
+        "交给 AI 工具即可配好生图，详见 docs/fyai-quickstart.md（也可用其他 OpenAI 兼容服务）。",
+    ],
+}
+
+
 def emit(result: dict[str, object], as_json: bool) -> None:
     if as_json:
         # Machine output must survive both UTF-8 agent pipes and GBK terminals.
@@ -292,9 +305,18 @@ def emit(result: dict[str, object], as_json: bool) -> None:
             f"  Note: legacy install found at {legacy}. "
             "You can remove it after confirming $slidemuse works."
         )
+    tip = result.get("image_backend_tip")
+    if tip:
+        for line in tip["zh"]:
+            print(f"  {line}")
 
 
 def main() -> None:
+    # Keep agent-facing text (including the bilingual image-backend tip) UTF-8
+    # on legacy Windows consoles, matching the generation backend wrapper.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(
         description="Install SlideMuse and its isolated Python runtime."
     )
@@ -375,6 +397,7 @@ def main() -> None:
 
     result["python"] = str(python)
     result["verified"] = not args.skip_deps
+    result["image_backend_tip"] = IMAGE_BACKEND_TIP
     emit(result, args.json)
 
 
