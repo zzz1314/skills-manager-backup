@@ -7,7 +7,7 @@
 Create visually consistent image decks from PDFs, papers, reports, and notes, with editable PPTX reconstruction when needed.<br>
 For work updates, teaching, research, competition pitches and defenses, product pitches, and creative presentations.
 
-[![Version](https://img.shields.io/badge/version-2.25.3-79e9d1?labelColor=14243c)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.25.5-79e9d1?labelColor=14243c)](CHANGELOG.md)
 [![CI](https://github.com/helloo1568/slidemuse/actions/workflows/ci.yml/badge.svg)](https://github.com/helloo1568/slidemuse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f2c98a?labelColor=14243c)](LICENSE)
 
@@ -22,8 +22,8 @@ For work updates, teaching, research, competition pitches and defenses, product 
 <a href="https://fyai.uk"><img src="https://raw.githubusercontent.com/helloo1568/slidemuse/main/docs/assets/sponsor/fengyun-ai.jpg" alt="FengYun AI" width="72"></a>
 
 **Sponsored by [FengYun AI](https://fyai.uk)** · a cost-effective AI API relay<br>
-GPT calls from **0.12× rate** · image generation **¥0.04 per image** (1K/2K/4K same price) · Claude models available<br>
-A good fit for everyday GPT/Claude use and batch image generation on a budget.
+GPT calls from **0.08× rate** · image generation **¥0.02 per image** (1K/2K/4K same price)<br>
+Supports Claude, GPT, Grok, Gemini, and Chinese models · **The lowest prices online, zero adulteration, and high-speed, full-capability models with no intelligence downgrades.**
 
 No Codex subscription or overseas network access, but want to get the most out of SlideMuse?<br>
 FengYun AI's OpenAI-compatible API plugs into the skill's generation backend — one paste to set up · [Setup guide](docs/fyai-quickstart.en.md)
