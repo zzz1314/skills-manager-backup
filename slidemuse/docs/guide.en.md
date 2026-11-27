@@ -17,7 +17,7 @@ Provide the source to begin. The agent can read it before recommending a length.
 - Native text, shapes, arrows, nested groups, tables and charts with embedded workbooks.
 - Deterministic asset extraction from supplied bounding boxes and optional masks.
 - An editability audit that checks exported objects, image geometry/crops, and nested group transforms against the scene.
-- GPT Image 2.5 guidance for Flare exploration and Sunburst reference editing.
+- GPT Image 2.6 guidance for style exploration, final slide generation and precision reference editing.
 - Existing image-only export and raster text overlay commands remain available.
 
 See the [official image guide](https://developers.openai.com/api/docs/guides/image-generation).
@@ -79,7 +79,7 @@ After installation, say "Use the slidemuse skill". Codex accepts `$slidemuse`, C
 
 | Environment | Image backend | Notes |
 |---|---|---|
-| Codex (recommended) | Codex image generation; prefer GPT Image 2.5 when selectable | Flare for exploration, Sunburst for final and precision editing |
+| Codex (recommended) | Codex image generation; prefer GPT Image 2.6 when selectable | For exploration, final slides and precision editing |
 | Other agents | That agent's own native or connected image generation/editing capability | Keep the same state machine, prompts, and acceptance checks |
 | Python only | No end-to-end image generation | Local scripts only assemble, overlay text, compile scenes, crop assets, and audit |
 
@@ -153,7 +153,7 @@ python scripts/audit_page_content.py work/page-spec.json work/observations-s02.j
 python scripts/plan_deck_update.py snapshot work/page-spec.json work/snapshots/baseline.json
 ```
 
-Page Spec export runs strict image validation automatically. Extra drafts in the directory are ignored; duplicate paths, missing or unapproved images, and mismatched aspect ratios stop export without replacing an existing output. `--width` or `--height` adjusts physical size; if both are supplied, they must preserve the canvas ratio. For standalone merging without a Page Spec, the legacy command remains `python scripts/build_image_ppt.py work/slides output/image-deck.pptx`.
+Page Spec export runs strict image validation automatically. Extra drafts in the directory are ignored; duplicate paths, missing or unapproved images, and mismatched aspect ratios stop export without replacing an existing output. Current material and managed production also require the actual generation record, approval and final image hashes to match. Existing user images declare `image_origin` with their source locator and SHA-256. Export reads verified snapshots and rechecks the inputs before replacing the output. `--width` or `--height` adjusts physical size; if both are supplied, they must preserve the canvas ratio. For standalone merging without a Page Spec, the legacy command remains `python scripts/build_image_ppt.py work/slides output/image-deck.pptx`.
 Raster text overlay now fails when a text box overflows; adjust its size or font before rerunning. The renderer uses PowerPoint on Windows when available, or LibreOffice plus Poppler (`soffice` and `pdftoppm`). Its output directory must be empty unless `--overwrite` is given. The comparison sheet shows source, rendered slide and pixel difference; the numeric difference is diagnostic and still needs visual review. Historical reference images marked `revision` are accepted for authorized editable changes.
 After generating an observation template, fill `observed_text` with the text actually visible in the image and set `status` to `complete` only after a full transcription. Run `audit_page_content.py ... --require-complete --output work/content-audit.json`; a changed page image invalidates its old observation. The update planner only reports affected slides and does not change Page Spec approval. See [revision rules](../references/workflow-updates.md).
 For regression or release checks, record observations and a visual review for every rendered slide, then run `evaluate_delivery.py` as described in the [delivery evaluation guide](../references/evaluation.md). An editable deliverable must include `--scene` to count editability in its scorecard.
@@ -201,7 +201,7 @@ Full scorecards use visual review v1.2 with source/value, label/unit, scale/geom
 
 ## Speaker notes and material-specific review (2.9.0)
 
-When the content draft has presenter notes, preserve them in Page Spec/Scene `speaker_notes`. Both PPTX exports retain them; editable `--page-spec` verifies upstream order and declared notes. Delivery evaluation reads actual PPTX notes. Notes-only edits rebuild exports while reusing images. `export_speaker_notes.py` optionally writes a source-referenced Markdown companion; see [speaker notes](../references/speaker-notes.md).
+Speaker notes default to empty; only when explicitly requested or authorized, preserve them in Page Spec/Scene `speaker_notes`. New generation contracts also use explicit notes only and ignore a leftover `speech.md`. Both PPTX exports retain declared notes; editable `--page-spec` verifies upstream order and notes, and the complete reconstruction backend compares them with a hash-bound semantic snapshot during build and final validation. Delivery evaluation reads actual PPTX notes. Notes-only edits rebuild exports while reusing images. `export_speaker_notes.py` optionally writes a source-referenced Markdown companion; see [speaker notes](../references/speaker-notes.md).
 
 Paper review covers formula variables, input/operation/output, experimental scope and source conflicts. Long-form review distinguishes targets, actions, support conditions and observed effects; see [material reading](../references/material-reading.md). Note fidelity does not prove semantic depth.
 
